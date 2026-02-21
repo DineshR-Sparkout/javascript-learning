@@ -1,0 +1,38 @@
+<h1 id="myname">Dinesh</h1>
+<button onclick="dine()">Click</button>
+<button onclick="ram()">press</button>
+<button onclick="pri()">print</button>
+<h2 id="myage">My Age is 23</h2>
+
+
+<script>
+    function dine(){
+        document.getElementById("myname").innerHTML = "Dinesh Ramu";
+    }
+    function ram(){
+        document.getElementById("myname").innerText = "I am Dinesh";
+    }
+    document.write("I am 23");
+    window.alert("I don't know JavaScript");
+    alert("I know JavaScript");
+    console.log("watch it in browser console");
+    function pri(){
+        print();
+    }
+    document.getElementById("myage").innerHTML = "My Age is 24";
+    let q = 10;
+    const w = 20;
+    let e = 30;
+    document.write(q + w + e);
+    sum = q + w + e;
+    document.getElementById("myage").innerHTML = sum + 2;
+    let r = 40;
+    let t = 50;
+    add = r + t;
+    document.getElementById("myage").innerHTML = add;
+
+    // single line comment
+    /* multi
+    line
+    comment */
+</script>
