@@ -1,0 +1,28 @@
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+let age = 10;
+if (age < 18) {
+  document.getElementById("demo").innerHTML = "You are a minor.";
+} else {
+  document.getElementById("demo").innerHTML = "You are an adult.";
+}
+let country = "India";
+if (country === "India") {
+    if (age >= 18)
+  document.getElementById("demo").innerHTML = "you can drive";
+}
+
+if  (country === "India" && age >= 18) {
+    document.getElementById("demo").innerHTML = "you can drive";
+}
+else if (country === "India" && age < 18) {
+    document.getElementById("demo").innerHTML = "you cannot drive";
+}
+else {
+    document.getElementById("demo").innerHTML = "you are not from India";
+}
+</script>
