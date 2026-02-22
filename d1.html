@@ -3,7 +3,8 @@
 <button onclick="ram()">press</button>
 <button onclick="pri()">print</button>
 <h2 id="myage">My Age is 23</h2>
-
+<p id="operators"></p>
+<p id="arithmetic"></p>
 
 <script>
     function dine(){
@@ -35,4 +36,26 @@
     /* multi
     line
     comment */
+    let y = 20;
+    {
+        let y = 30;
+        document.write(y);
+    }
+    document.write(y);
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    cars[0] = "Toyota";
+    document.write(cars);
+    cars.push("Audi");
+    document.write(cars);
+    typeof "dinesh";
+    let u = 10;
+    document.write(typeof u);
+    let i = 10;
+    document.getElementById("myage").innerHTML = i == 10;
+    let o = 10;
+    let p = 20;
+    document.getElementById("operators").innerHTML = o + p + "<br>" + (o - p) + "<br>" + (o * p) + "<br>" + (o / p) + "<br>" + (o % p);
+    let a = "dinesh";
+    a += " ramu";
+    document.getElementById("arithmetic").innerHTML = a;
 </script>
