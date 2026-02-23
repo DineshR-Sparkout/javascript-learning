@@ -1,0 +1,60 @@
+<p id="javascript"></p>
+<p id="switch"></p>
+<p id="boolean"></p>
+<p id="logical"></p>
+<p id="loop"></p>
+
+<script>
+    let age = 16;
+    let text = (age<18) ? "Too young to vote" : "Old enough to vote";
+    document.getElementById("javascript").innerHTML = text;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+        default:
+            day = "Unknown day";
+    }
+    document.getElementById("switch").innerHTML = day;
+    let s = 1;
+    document.getElementById("boolean").innerHTML = (s >= 0);
+    document.getElementById("boolean").innerHTML = Boolean(s >= 0);
+    let d = 5;
+    let f = 10;
+    document.getElementById("logical").innerHTML = (d > 0 && f > 0);
+    document.getElementById("logical").innerHTML = (!(d === f));
+
+    for (let i = 0; i < 5; i++){
+        text += i + "";
+        document.getElementById("loop").innerHTML = text;
+    }
+    while (age < 23){
+        text += age + "<br>";
+        age++;
+        document.getElementById("loop").innerHTML = text + "<br>";
+    }
+
+    do {
+        text += age + '<br>';
+        age++;
+    }
+    while (age < 23);
+    document.getElementById("loop").innerHTML = text + "<br>";
+</script>
