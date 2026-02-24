@@ -1,0 +1,40 @@
+<p id="forloop"></p>
+<p id="whileloop"></p>
+<p id="do"></p>
+<p id="break"></p>
+<p id="continue"></p>
+<script>
+    const phones = ["iphone","vivo","oppo","realme"];
+    let len = phones.length;
+    let text = "";
+    let i = 0;
+    for (; i < len;){
+        if(i===2){break}
+        text += phones[i] + "<br>";
+        i++;
+    }
+    document.getElementById("forloop").innerHTML = text;
+    while(i < 10){
+        text += "the numbers are" + i + "<br>";
+        i++;
+    }
+    document.getElementById("whileloop").innerHTML = text;
+    do{
+        text += "the numbers are" + i + "<br>";
+        i++;
+    }
+    while(i < 10)
+    document.getElementById("do").innerHTML = text;
+    loop1: for(i = 0; i < 5; i++){
+        loop2: for(j = 0; j < 5; j++){
+            if(j == 4){break loop1}
+            text += "the numbers are" + j;
+        }
+    }
+    document.getElementById("break").innerHTML = text;
+    for(i = 0; i < 5; i++){
+        if(i == 5){continue;}
+        text += "the numbers are" + i*20;
+    }
+    document.getElementById("continue").innerHTML = text;
+</script>
