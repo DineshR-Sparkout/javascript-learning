@@ -1,0 +1,25 @@
+<p id="string"></p>
+<p id="slash"></p>
+<p id="dollar"></p>
+<p id="expression"></p>
+
+<script>
+    text = `template strings"`
+    len = text.length
+    document.getElementById("string").innerHTML = text + len
+    s = "iam \"dinesh\""
+    document.getElementById("slash").innerHTML = s
+    let firstName = "Dinesh";
+    let lastName = "Ramu";
+    let myname = `Hi i am ${firstName}, ${lastName}!`;
+    document.getElementById("dollar").innerHTML = myname;
+    let price = 10;
+    let tax = 0.10;
+    let total = `${price + price * tax}`
+    document.getElementById("expression").innerHTML = total + text.charAt(1) + text.charCodeAt(2) + text[4] + firstName.concat("", lastName) + text.slice(3,5) + text.toUpperCase() + text.toLowerCase() + text.isWellFormed() + 
+    // text.trimmed() 
+    text.padStart(4,"0") + text.repeat(5) + text.replace("template", "javascript") + text.indexOf("strings") + text.match("t") + text.includes("t");
+
+
+
+</script>
