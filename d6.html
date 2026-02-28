@@ -1,0 +1,15 @@
+<p id="number"></p>
+<p id ="nan"></p>
+<p id ="properties"></p>'
+<p id="bitwise"></p>
+
+<script>
+    let n = 2.645;
+    let n2 = 4;
+    let s = "2";
+    let s2 = "4";
+    document.getElementById("number").innerHTML = n + n2 + s + s2 + s/s2;
+    document.getElementById("nan").innerHTML = n/"nan" + typeof NaN;
+    document.getElementById("properties").innerHTML = n.toString() + n.toExponential(5) + n.toFixed(3) + n.toPrecision(4) + n.valueOf() + Number(s) + parseInt(n) + parseFloat(n) + Number.isInteger(n) + Number.EPSILON + Number.MAX_VALUE + Number.MIN_VALUE + Number.POSITIVE_INFINITY + Number.NEGATIVE_INFINITY;
+    document.getElementById("bitwise").innerHTML = 5 & 1 + "<br>" + 5 | 1 + "<br>" +  6 ^ 1 + ~5 + 5 << 1 + 5 >> 1 + 5 >>> 1;
+</script>
