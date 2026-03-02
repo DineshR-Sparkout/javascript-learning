@@ -1,0 +1,19 @@
+<button id="function" onclick="func()">function</button>
+<p id="multi"></p>
+<button onclick="invoc()">invoc</button>
+<p id="invoc"></p>
+
+<script>
+    function func(){
+        alert("Hello dinesh");
+    }
+    function multiply(a, b){
+        return a * b;
+    }
+    let result = multiply(4,5)
+    document.getElementById("multi").innerHTML = result;
+    function invoc(){
+        document.getElementById("invoc").innerHTML = "function invoc";
+    }
+
+</script>
