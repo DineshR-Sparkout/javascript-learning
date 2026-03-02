@@ -1,0 +1,16 @@
+<p id="parameter"></p>
+<p id="return"></p>
+
+<script>
+    function fullName(firstName, lastName){
+        return firstName + " " + lastName;
+    }
+    let name = fullName("Dinesh" , "Ramu");
+    document.getElementById("parameter").innerHTML = name;
+
+    function multiply(a, b = 10){
+        return a * b;
+    }
+    let total = multiply(5) + 3 * 4;
+    document.getElementById("return").innerHTML = total;
+</script>
