@@ -1,0 +1,22 @@
+<p id="object"></p>
+<p id="properties"></p>
+<p id="nested"></p>
+
+<script>
+    const car = {
+        type: "fiat",
+        color: "black",
+        speed:{
+            speed1: "100/km",
+            speed2: "150/km"
+        }
+    };
+    car.type = "audi";
+    car.color = "white"
+    delete car.color;
+    let result = ("type" in car)
+    document.getElementById("object").innerHTML = car.type + car.color;
+    document.getElementById("properties").innerHTML = result;
+    document.getElementById("nested").innerHTML = car.speed.speed2;
+
+</script>
