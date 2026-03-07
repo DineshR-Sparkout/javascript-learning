@@ -1,0 +1,33 @@
+<p id="method"></p>
+<p id="display"></p>
+<p id="array"></p>
+<p id="entries"></p>
+
+<script>
+    const person = {
+        id: "0001" ,
+        firstName: "Dinesh",
+        lastName: "Ramu",
+        age: 23,
+        fullName: function(){
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        }
+    };
+    document.getElementById("method").innerHTML = person.fullName();
+    let text = " "
+    for (let x in person){
+        text += person[x] +" ";
+    }
+
+    document.getElementById("display").innerHTML = text;
+    const myArray = Object.values(person);
+    let text_2 = myArray.toString();
+    document.getElementById("array").innerHTML = text_2;
+
+    const fruits = { apple: 10, orange: 20, grapes: 15};
+    let text_3 = ""
+    for (let [fruit, amount] of Object.entries(fruits)){
+        text_3 += fruit + ":" + amount; + "<br>"
+    }
+    document.getElementById("entries").innerHTML = text_3
+</script>
