@@ -1,0 +1,23 @@
+<p id="constructor"></p>
+<p id="date"></p>
+<p id="dates"></p>
+
+<script>
+    "use strict"
+    function person(first, last, age, eye){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    person.prototype.nationality = "indian"
+    const myData = new person("dinesh", "ramu", 23, "black");
+    const myFather = new person("ramu", "madhavan", 60, "black");
+    document.getElementById("constructor").innerHTML = "my name is " + myData.firstName + " " + myData.lastName + "." + "my father name is" + " " + myFather.firstName + " " + myFather.lastName + "our nationality is" + " " + myData.nationality;
+
+    const d = new Date();
+    document.getElementById("date").innerHTML = d;
+    const da = new Date("October 13, 2014 11:13:00");
+    document.getElementById("dates").innerHTML = da;
+
+</script>
